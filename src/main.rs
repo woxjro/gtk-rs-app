@@ -15,7 +15,7 @@ fn main() {
     application.connect_activate(|app| {
         let window = ApplicationWindow::new(app);
         window.set_title("First GTK+ Program");
-        window.set_default_size(350, 70);
+        window.set_default_size(350, 100);
 
         let button = Button::new_with_label("Click me!");
         button.connect_clicked(|_| {
